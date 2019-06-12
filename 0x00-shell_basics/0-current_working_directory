@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 echo "$PWD"
+=======
+echo $PWD
+>>>>>>> 7eaa1c3c973646bb6fa655007c99ae925fdd26bb
