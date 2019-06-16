@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -rc */
+echo */ | wc -w
