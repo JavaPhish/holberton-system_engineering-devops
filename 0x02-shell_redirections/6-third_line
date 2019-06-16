@@ -1,2 +1,2 @@
 #!/bin/bash
-echo iacta|awk '{print $3}'
+head  -3 iacta | tail -2
