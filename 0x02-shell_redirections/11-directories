@@ -1,2 +1,2 @@
 #!/bin/bash
-tree -L 1 | tail -1
+find */ | wc
