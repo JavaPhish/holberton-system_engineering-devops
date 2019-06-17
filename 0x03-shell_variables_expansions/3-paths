@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ls -D $CDPATH | wc -l
+echo | ls -D $CDPATH | wc -l
