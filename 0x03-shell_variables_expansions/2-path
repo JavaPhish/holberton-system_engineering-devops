@@ -1,2 +1,2 @@
 #!/bin/bash
-set path = ( $path /action)
+set $path = ( $path /action)
