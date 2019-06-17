@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
 mkdir $PATH + /action
-=======
-set $path = ( $path /action)
->>>>>>> 0b30c95d637e0b639cf51b5bd0840edf314771e5
