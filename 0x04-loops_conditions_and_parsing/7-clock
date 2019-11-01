@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Prints the minutes and hour for 13 hours
+
+hours=0
+
+while [ $hours -ne 13 ]
+do
+	echo "Hour: "$hours
+
+	mins=1	
+	while [ $mins -ne 60 ]
+	do
+		echo $mins
+		mins=$((mins + 1))
+	done
+
+	hours=$((hours + 1))
+done
