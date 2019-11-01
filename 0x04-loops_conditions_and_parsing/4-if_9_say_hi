@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script prints "Holberton School" Ten times using a while loop
+# But prints "Hi" on the 9th iteration
+
+loop=0
+while [ $loop -ne 10 ]
+do
+	if [ $loop -eq 8 ]
+	then
+		echo "Hi"
+	else
+		echo "Holberton School"
+	fi
+
+	loop=$((loop + 1))
+done
