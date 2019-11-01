@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# This script prints 1 - 20
+# But prints "bad luck from China" on the 4th iteration
+# prints "bad luck from japan on thje 9th iteration
+# prints bad luck from italy on the 17th iteration
+
+loop=1
+while [ $loop -ne 21 ]
+do
+	if [ $loop -eq 4 ]
+	then
+		echo $loop
+		echo "bad luck from China"
+	elif [ $loop -eq 9 ]
+	then
+		echo $loop
+		echo "bad luck from Japan"
+	elif [ $loop -eq 17 ]
+	then
+		echo $loop
+		echo "bad luck from Italy"
+	else
+		echo $loop
+	fi
+
+	loop=$((loop + 1))
+done
