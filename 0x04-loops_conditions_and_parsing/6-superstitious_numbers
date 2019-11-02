@@ -7,21 +7,22 @@
 loop=1
 while [ $loop -ne 21 ]
 do
-	if [ $loop -eq 4 ]
-	then
-		echo $loop
+	echo $loop
+
+	case "$loop" in
+	
+	"4")
 		echo "bad luck from China"
-	elif [ $loop -eq 9 ]
-	then
-		echo $loop
+	;;
+	"9")
 		echo "bad luck from Japan"
-	elif [ $loop -eq 17 ]
-	then
-		echo $loop
-		echo "bad luck from Italy"
-	else
-		echo $loop
-	fi
+	;;
+	"17")
+		echo "bad luck from Italy"	
+	;;
+
+	esac
 
 	loop=$((loop + 1))
+
 done
