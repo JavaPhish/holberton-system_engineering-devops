@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Prints all running processes in user oriented format
 
-ps -u
+ps -ua
