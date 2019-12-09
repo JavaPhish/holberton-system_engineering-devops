@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# Really? I fail a whole assignment for no comment?
 
 netstat | grep "LISTEN"
