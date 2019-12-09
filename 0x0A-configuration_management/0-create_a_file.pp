@@ -1,4 +1,4 @@
-file { '/tmp/holberton' :
+file { 'holberton' :
   ensure   =>  'present',
   path     =>  '/tmp/holberton',
   content  =>  'I love Puppet',
