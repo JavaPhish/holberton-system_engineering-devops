@@ -1,8 +1,8 @@
 file { '/tmp/holberton':
   path   => '/tmp/holberton',
-  ensure   => 'file',
-  content   => "I love Puppet",
+  ensure   => 'present',
+  content   => '"I love Puppet"',
   owner   => 'www-data',
   group   => 'www-data',
-  mode   => '0774'
+  mode   => '0744'
 }
