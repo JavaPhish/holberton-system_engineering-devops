@@ -1,7 +1,7 @@
   
 # Creates a file n stuff
 file { '/.ssh/config' :
-  ensure   =>  'present',
+  ensure   =>  'file',
   content  =>  'PasswordAuthentication no
   ChallengeResponseAuthentication no',
 }
