@@ -12,5 +12,5 @@ else
 	USER=${ARGS[2]}
 	PATH_TO_SSH=${ARGS[3]}
 
-	scp -i $PATH_TO_SSH $PATH_TO_FILE $USER"@"$IP':'$PATH_TO_FILE
+	scp -o StrictHostKeyChecking no -i $PATH_TO_SSH $PATH_TO_FILE $USER"@"$IP':'$PATH_TO_FILE
 fi;
