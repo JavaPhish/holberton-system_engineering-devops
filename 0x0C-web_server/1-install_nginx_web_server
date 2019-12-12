@@ -6,4 +6,4 @@ sudo apt-get install -y nginx
 
 sudo mkdir -p /var/www/html/
 sudo index.html
-sudo echo "Holberton School" > index.html
+echo "Holberton School" > index.html
