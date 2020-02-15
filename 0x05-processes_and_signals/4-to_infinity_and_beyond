@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Prints to infinity and beyond infinitely, with a delay of 2
-# between each delay
-
-while :
-do
-	echo "To infinity and beyond"
-	sleep 2
-done

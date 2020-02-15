@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# temp comment
-
-LIST="$(ls)"
-for file in $LIST;
-do
-	echo "$file" | cut -d "-" -f 2
-done

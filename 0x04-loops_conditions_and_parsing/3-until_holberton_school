@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Prints "Holberton School" using an until loop
-
-cond=0
-until [ $cond -eq 10 ]
-do
-	echo "Holberton School"
-	cond=$((cond + 1))
-done
