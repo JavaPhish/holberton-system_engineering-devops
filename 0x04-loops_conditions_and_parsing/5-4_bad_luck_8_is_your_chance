@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# something
+
+iter=1
+while [ $iter -le 10 ]
+do
+	if [ $iter -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $iter -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Holberton School"
+	fi
+
+	iter=$(( iter + 1 ))
+done
