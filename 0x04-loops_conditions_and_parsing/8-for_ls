@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# for ls stuff
+
+for name in *
+do
+	echo "$name" | cut -d '-' -f 2
+done
