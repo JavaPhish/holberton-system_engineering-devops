@@ -2,7 +2,7 @@
 # its fizz buzz :)
 
 iter=1
-while [ $iter -le 99 ]
+while [ $iter -le 100 ]
 do
 
 	if [ $(( iter % 15 )) -eq 0 ]
@@ -10,10 +10,10 @@ do
 		echo "FizzBuzz"
 	elif [ $(( iter % 5 )) -eq 0 ]
 	then
-		echo "Buzz "
+		echo "Buzz"
 	elif [ $(( iter % 3 )) -eq 0 ]
 	then
-		echo "Fizz "
+		echo "Fizz"
 	else
 		echo "$iter"
 	fi
