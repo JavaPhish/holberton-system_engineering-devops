@@ -2,7 +2,7 @@
 # its fizz buzz :)
 
 iter=1
-while [ $iter -le 100 ]
+while [ $iter -le 99 ]
 do
 
 	if [ $(( iter % 15 )) -eq 0 ]
