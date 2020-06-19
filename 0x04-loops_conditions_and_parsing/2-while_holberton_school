@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Prints "Holberton School" 10 times (with a while loop)
+
+iter=1
+while [ $iter -le 10 ]
+do
+	echo "Holberton School"
+	iter=$(( iter + 1 ))
+done
