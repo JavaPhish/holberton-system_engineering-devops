@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# file interaction of the "holbertonschool" file
+
+if [ -e holbertonschool ]
+then
+	echo "holbertonschool file exists"
+
+
+
+	if [ -f holbertonschool ]
+	then
+		echo "holbertonschool file is not empty"
+	else
+		echo "holbertonschool file is not empty"
+	fi
+
+	if [ -s holbertonschool ]
+	then
+		echo "holbertonschool is a regular file"
+	fi
+else
+	echo "holbertonschool file does not exist"
+fi
