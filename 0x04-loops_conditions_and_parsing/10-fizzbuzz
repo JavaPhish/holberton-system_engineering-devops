@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# its fizz buzz :)
+
+iter=1
+while [ $iter -le 100 ]
+do
+
+	if [ $(( iter % 15 )) -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $(( iter % 5 )) -eq 0 ]
+	then
+		echo "Buzz "
+	elif [ $(( iter % 3 )) -eq 0 ]
+	then
+		echo "Fizz "
+	else
+		echo "$iter"
+	fi
+	
+	iter=$(( iter + 1 ))
+done
