@@ -8,6 +8,7 @@ do
 	then
 		echo "Holberton School"
 	else
+		echo "Holberton School"
 		echo "Hi"
 	fi
 
