@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays this processes pidls
+echo $$
