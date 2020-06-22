@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# They want an infinite loop, so theyre getting one
+while 'true'
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
