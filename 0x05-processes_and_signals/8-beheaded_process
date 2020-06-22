@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Kills a specific process from a prior script
+echo "Killed"
 pkill 7-highlander
