@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Port listener
+nc -l 98
