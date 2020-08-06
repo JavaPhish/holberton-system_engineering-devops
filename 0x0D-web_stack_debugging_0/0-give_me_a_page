@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Fix my server!
-
+apache2ctl start
