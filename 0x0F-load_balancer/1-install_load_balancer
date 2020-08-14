@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Install and configure HAproxy
+# shellcheck disable=SC2059
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-1.8
+sudo apt-get update
+sudo apt-get install haproxy=1.8.\*
+
+sudo sed -i 's/defaults/listen webs\n   bind :80\n   balance roundrobin\n   server 831-web-01 35.237.153.5:80 check\n   server 831-web-02 35.196.198.98:80 check\n\ndefaults/g' /etc/haproxy/haproxy.cfg
+sudo systemctl restart haproxy
