@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Configure a custom HTTP response to differentiate servers
-sudo sed -i 's/http {/http {\n        add_header X-Served-By 831-web-02;/g' /etc/nginx/nginx.conf
+sudo sed -i 's/http {/http {\n        add_header X-Served-By $hostname;/g' /etc/nginx/nginx.conf
 sudo service nginx reload
