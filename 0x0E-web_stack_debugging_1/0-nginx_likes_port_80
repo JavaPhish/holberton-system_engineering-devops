@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Simply changes the port typos in the config file, restarts
+sudo sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+sudo service nginx restart
