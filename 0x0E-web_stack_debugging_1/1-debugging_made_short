@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Attempting to just use the one from 0 to fix
+sudo sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+sudo service nginx restart

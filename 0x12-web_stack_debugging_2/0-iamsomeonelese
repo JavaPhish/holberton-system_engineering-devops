@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# changes users just to tell you its on that user.
+# this is a useless use case of SU...
+su -l "$1" -c whoami
