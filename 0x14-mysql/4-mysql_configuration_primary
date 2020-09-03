@@ -13,5 +13,6 @@
 !includedir /etc/mysql/mysql.conf.d/
 
 [mysqld]
-log-bin=mysql-bin
-server-id=1
+log_bin = /var/log/mysql/mysql-bin.log
+server-id = 1
+binlog-do-db = tyrell_corp
