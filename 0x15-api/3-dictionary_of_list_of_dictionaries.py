@@ -11,11 +11,11 @@ def get_tasks(id):
     """ Get the todos matching the UserId provided by argv """
     api_url = "https://jsonplaceholder.typicode.com"
     api = requests.get('{}/todos?userId={}'.format(api_url, id))
-    todo_d = json.loads(api.content)
+    todo_d = api.json()
 
     """ Need to get the matching users name with the ID from the post """
     api2 = requests.get('{}/users?id={}'.format(api_url, id))
-    name = json.loads(api2.content)
+    name = api2.json()
 
     """ All content is his ID so the first dict will work """
     name = name[0].get('username')
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     """ Get the todos matching the UserId provided by argv """
     api_url = "https://jsonplaceholder.typicode.com"
     api = requests.get('{}/todos'.format(api_url))
-    todo_d = json.loads(api.content)
+    todo_d = api.json()
 
     """ Get a list of all the userIDs in the API """
     id_list = []
