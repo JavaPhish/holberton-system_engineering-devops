@@ -21,7 +21,7 @@ if __name__ == "__main__":
     """ All content is his ID so the first dict will work """
     name = name[0].get('username')
 
-    """ Now we have the name, and the todos list data, lets do csv stuff with it"""
+    """ Now we have the name, and the todos list data, lets do csv stuff"""
     """ Using our data, write each line of a CSV file to contain a task """
     with open('{}.csv'.format(argv[1]), mode='w') as file:
         for task in todo_d:
