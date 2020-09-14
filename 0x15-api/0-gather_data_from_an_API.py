@@ -3,14 +3,14 @@
 
 import json
 import requests
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
 
     """ Get the todos matching the UserId provided by argv """
     api_url = "https://jsonplaceholder.typicode.com"
-    api = requests.get('{}/todos?userId={}'.format(api_url, sys.argv[1]))
+    api = requests.get('{}/todos?userId={}'.format(api_url, argv[1]))
     todo_d = json.loads(api.content)
 
     task_total = 0
@@ -24,7 +24,7 @@ if __name__ == "__main__":
             task_completed += 1
 
     """ Need to get the matching users name with the ID from the post """
-    api2 = requests.get('{}/users?id={}'.format(api_url, sys.argv[1]))
+    api2 = requests.get('{}/users?id={}'.format(api_url, argv[1]))
     name = json.loads(api2.content)
     """ All content is his ID so the first dict will work """
     name = name[0]['name']
