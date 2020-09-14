@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Test with jsonplaceholder API """
 
-import requests
 import json
+import requests
 import sys
 
 
