@@ -3,7 +3,7 @@
 
 import json
 import requests
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
@@ -11,11 +11,11 @@ if __name__ == "__main__":
     """ Get the todos matching the UserId provided by argv """
     api_url = "https://jsonplaceholder.typicode.com"
     api = requests.get('{}/todos?userId={}'.format(api_url, sys.argv[1]))
-    todo_d = json.loads(api.content)
+    todo_d = api.json()
 
     """ Need to get the matching users name with the ID from the post """
     api2 = requests.get('{}/users?id={}'.format(api_url, sys.argv[1]))
-    name = json.loads(api2.content)
+    name = api2.json()
 
     """ All content is his ID so the first dict will work """
     name = name[0].get('username')
@@ -36,5 +36,5 @@ if __name__ == "__main__":
 
     """ Create a json object with the new dict and dump it into a json file """
     j_obj = json.dumps(jdict)
-    with open('USER_ID.json', mode='w') as file:
+    with open('{}.json'.format(argv[1]), mode='w') as file:
         file.write(j_obj)
