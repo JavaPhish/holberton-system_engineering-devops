@@ -27,10 +27,10 @@ if __name__ == "__main__":
     api2 = requests.get('{}/users/{}'.format(api_url, argv[1]))
     name = json.loads(api2.content)
     """ All content is his ID so the first dict will work """
-    name = name[0]['name']
+    uname = name['name']
 
     """ First print string :) """
-    print('Employee {} is done with tasks({}/{}):'.format(name,
+    print('Employee {} is done with tasks({}/{}):'.format(uname,
                                                           task_completed,
                                                           task_total))
 
