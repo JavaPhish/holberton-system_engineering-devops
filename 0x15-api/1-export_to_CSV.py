@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     """ Now we have the name, and the todos list data, lets do csv stuff with it"""
     """ Using our data, write each line of a CSV file to contain a task """
-    with open('USER_ID.csv', mode='w') as file:
+    with open('{}.csv'.format(argv[1]), mode='w') as file:
         for task in todo_d:
             csv_w = csv.writer(file,
                                delimiter=',',
