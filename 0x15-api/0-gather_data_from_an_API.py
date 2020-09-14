@@ -37,4 +37,4 @@ if __name__ == "__main__":
     """ print all the tasks (Just gonna re use todo_data) """
     for task in todo_d:
         if task['completed'] is True:
-            print(' ' + '\t{}'.format(task['title']))
+            print(' \t{}'.format(task['title']))
