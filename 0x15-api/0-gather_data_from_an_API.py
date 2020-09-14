@@ -20,14 +20,14 @@ if __name__ == "__main__":
         """ Count all the tasks and tasks completed (list of tasks) """
         task_total += 1
 
-        if task.get('completed') is True:
+        if task['completed'] is True:
             task_completed += 1
 
     """ Need to get the matching users name with the ID from the post """
     api2 = requests.get('{}/users?id={}'.format(api_url, sys.argv[1]))
     name = json.loads(api2.content)
     """ All content is his ID so the first dict will work """
-    name = name[0].get('name')
+    name = name[0]['name']
 
     """ First print string :) """
     print('Employee {} is done with tasks({}/{}):'.format(name,
@@ -37,4 +37,4 @@ if __name__ == "__main__":
     """ print all the tasks (Just gonna re use todo_data) """
     for task in todo_d:
         if task.get('completed') is True:
-            print('\t {}'.format(task.get('title')))
+            print('\t {}'.format(task['title']))
