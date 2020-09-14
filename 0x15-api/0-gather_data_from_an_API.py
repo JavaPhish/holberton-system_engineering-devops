@@ -24,7 +24,7 @@ if __name__ == "__main__":
             task_completed += 1
 
     """ Need to get the matching users name with the ID from the post """
-    api2 = requests.get('{}/users?id={}'.format(api_url, argv[1]))
+    api2 = requests.get('{}/users/{}'.format(api_url, argv[1]))
     name = json.loads(api2.content)
     """ All content is his ID so the first dict will work """
     name = name[0]['name']
